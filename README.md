@@ -11,7 +11,7 @@ A Unified Security Toolkit for Offensive and Defensive Cybersecurity Automation
 
 ### 🐳 Docker (Recommended)
 ```bash
-git clone https://github.com/YOUR_USERNAME/CyberAutoX-Tool.git
+git clone https://github.com/pugazh342/cyberautox.git
 cd CyberAutoX-Tool
 docker build -t cyberautox .
 docker run cyberautox --help
@@ -24,7 +24,7 @@ docker run -v $(pwd)/reports:/app/reports cyberautox vulnscan --target "http://e
 
 ### 🖥️ Local (Without Docker)
 ```bash
-git clone https://github.com/YOUR_USERNAME/CyberAutoX-Tool.git
+git clone https://github.com/pugazh342/cyberautox.git
 cd CyberAutoX-Tool
 pip install -r requirements.txt
 python cyberautox.py --help
@@ -155,8 +155,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📬 Contact
 
 Feel free to reach out for issues, collaborations, or feedback:
-- GitHub Issues: [Open an issue](https://github.com/YOUR_USERNAME/CyberAutoX-Tool/issues)
-- Email: your.email@example.com
+- GitHub Issues: [Open an issue](https://github.com/pugazh342/cyberautox/issues)
+- Email: kpugazhmani21@gmail.com
 
 ---
 
