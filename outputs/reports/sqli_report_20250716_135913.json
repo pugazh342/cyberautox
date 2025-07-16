@@ -1,0 +1,19 @@
+{
+  "scan_type": "sqli",
+  "target": "http://testphp.vulnweb.com/listproducts.php?cat=1",
+  "timestamp": "20250716_135913",
+  "findings": [
+    {
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=1",
+      "payload": "sqlmap detected injection",
+      "details": [
+        "back-end DBMS: MySQL >= 5.6",
+        "[13:59:13] [INFO] fetched data logged to text files under 'C:\\Users\\kpuga\\AppData\\Local\\sqlmap\\output\\testphp.vulnweb.com'",
+        "",
+        "[*] ending @ 13:59:13 /2025-07-16/",
+        ""
+      ],
+      "tool": "sqlmap"
+    }
+  ]
+}

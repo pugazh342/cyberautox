@@ -1,0 +1,72 @@
+CyberAutoX/                            # Master Project
+│
+├── core/                             # Shared Framework Components
+│   ├── utils/                        # Common utilities
+│   │   ├── logger.py                 # Unified logging
+│   │   ├── config_manager.py         # Centralized configuration
+│   │   ├── api_clients/              # Shodan, Censys, Cloud APIs
+│   │   └── report_generator.py       # Standardized reporting (HTML/PDF/JSON)
+│   │
+│   ├── engines/                      # Core scanning engines
+│   │   ├── web_crawler.py            # Shared crawling logic
+│   │   ├── fuzzer.py                 # Base fuzzing engine
+│   │   └── vulnerability_detector.py # Common CVE checks
+│   │
+│   └── integrations/                 # External tool integrations
+│       ├── sqlmap_wrapper.py
+│       ├── nmap_controller.py
+│       ├── mobSF_connector.py
+│       └── bloodhound_loader.py
+│
+├── modules/                          # All 18 Tools as Integrated Modules
+│   ├── reconnaissance/               # Former ReconX
+│   │   ├── subdomain_scanner.py
+│   │   └── osint_harvester.py
+│   │
+│   ├── vulnerability_scanning/       # Former VulnHawk
+│   ├── xss/                          # Former XSSAssault
+│   ├── sqli/                         # Former SQLBreach
+│   ├── csrf/                         # Former CSRFX
+│   ├── network_vapt/                 # Former NetRaid
+│   ├── auth_testing/                 # Former AuthX
+│   ├── access_control/               # Former AccessBreaker
+│   ├── jwt/                          # Former JWTForgeX
+│   ├── ssrf_fileupload/              # Former SSRFUploadX
+│   ├── waf_bypass/                   # Former WAFBypassX
+│   ├── session_attacks/              # Former CookieReplayer
+│   ├── path_traversal/               # Former PathCrawlerX
+│   ├── mobile_api/                   # Former MobileAPITestX
+│   ├── api_security/                 # Former APIScanX
+│   ├── cloud/                        # Former CloudHunterX
+│   ├── ci_cd/                        # Former CICDRaider
+│   └── active_directory/             # Former ADStrikeX
+│
+├── resources/                        # Shared Resources
+│   ├── payloads/                     # Centralized payload storage
+│   │   ├── xss/
+│   │   ├── sqli/
+│   │   └── traversal/
+│   │
+│   ├── wordlists/                    # Unified wordlists
+│   ├── templates/                    # Report/HTML templates
+│   └── cloud_metadata/               # Cloud config templates
+│
+├── tests/                            # Unified Testing Framework
+│   ├── unit/
+│   ├── integration/
+│   └── live_targets/
+│
+├── outputs/                          # Consolidated Outputs
+│   ├── scans/
+│   ├── reports/
+│   ├── loot/                         # Extracted sensitive data
+│   └── screenshots/
+│
+├── configs/                          # Centralized Configuration
+│   ├── global.yml                    # Master config
+│   ├── api_keys.yml                  # Encrypted API storage
+│   └── module_configs/               # Per-tool configurations
+│
+├── Dockerfile                        # Containerization support
+├── requirements.txt                  # Unified dependencies
+└── cyberautox.py                     # Master CLI Controller

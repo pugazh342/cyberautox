@@ -1,0 +1,6 @@
+# CyberAutoX/configs/global.yml
+scan_timeout: 5
+report_format: json
+logger:
+  level: INFO
+  file_output: False # Set to True if you want logs written to outputs/logs/

@@ -1,0 +1,6 @@
+stages:
+  - build
+build_job:
+  script:
+    - echo "Insecure command: eval \$(something)"
+    - secret: 'a_hardcoded_secret_password'

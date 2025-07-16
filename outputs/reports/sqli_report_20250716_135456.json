@@ -1,0 +1,6 @@
+{
+  "scan_type": "sqli",
+  "target": "http://testphp.vulnweb.com/listproducts.php?cat=1",
+  "timestamp": "20250716_135456",
+  "findings": []
+}

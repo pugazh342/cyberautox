@@ -1,0 +1,6 @@
+{
+  "scan_type": "rce",
+  "target": "http://testphp.vulnweb.com/userinfo.php",
+  "timestamp": "20250716_132753",
+  "findings": []
+}

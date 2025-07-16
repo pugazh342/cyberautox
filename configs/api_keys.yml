@@ -1,0 +1,6 @@
+# configs/api_keys.yml
+shodan:
+  api_key: 7zZDC3dFWyJTqhEBfZTf9hfEEjlmWJlX # Replace with your actual Shodan API key
+#censys:
+ # api_id: YOUR_CENSYS_API_ID_HERE
+  #api_secret: YOUR_CENSYS_API_SECRET_HERE

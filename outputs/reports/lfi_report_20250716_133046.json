@@ -1,0 +1,6 @@
+{
+  "scan_type": "lfi",
+  "target": "http://testphp.vulnweb.com/index.php?file=test",
+  "timestamp": "20250716_133046",
+  "findings": []
+}

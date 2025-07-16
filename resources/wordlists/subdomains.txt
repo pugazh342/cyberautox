@@ -1,0 +1,8 @@
+# resources/wordlists/subdomains.txt
+www
+mail
+ftp
+admin
+api
+dev
+test

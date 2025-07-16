@@ -1,0 +1,6 @@
+{
+  "scan_type": "xss",
+  "target": "http://testphp.vulnweb.com/",
+  "timestamp": "20250716_131750",
+  "findings": []
+}

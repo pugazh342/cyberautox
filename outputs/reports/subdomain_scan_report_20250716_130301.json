@@ -1,0 +1,16 @@
+{
+  "scan_type": "subdomain_scan",
+  "target": "google.com",
+  "timestamp": "20250716_130301",
+  "findings": [
+    {
+      "type": "Subdomain Discovery",
+      "domain": "google.com",
+      "results": [
+        "http://www.google.com",
+        "http://mail.google.com",
+        "http://admin.google.com"
+      ]
+    }
+  ]
+}
